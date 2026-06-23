@@ -1,0 +1,78 @@
+# 📦 Supply Chain Data Analysis Project
+
+## 📌 Project Overview
+This project focuses on analyzing a Supply Chain dataset using Python to extract business insights related to product performance, suppliers, logistics, and quality control.
+
+---
+
+## 📊 Objectives
+- Analyze product sales and revenue trends  
+- Evaluate supplier performance  
+- Compare shipping carriers and transportation modes  
+- Study quality inspection results  
+- Identify correlations between business variables  
+
+---
+
+## 🧰 Tools & Technologies
+- Python  
+- Pandas  
+- Matplotlib  
+- Jupyter Notebook  
+
+---
+
+## 📁 Dataset Features
+- Product Type  
+- Revenue Generated  
+- Supplier Name  
+- Shipping Costs & Times  
+- Defect Rates  
+- Manufacturing Costs  
+- Transportation Modes  
+
+---
+
+## 🔍 Key Analysis Performed
+
+### 1. Data Cleaning
+- Handled formatting issues
+- Rounded financial values
+- Standardized text columns
+
+### 2. Product Analysis
+- Revenue by product type  
+- Sales distribution across categories  
+
+### 3. Supplier Analysis
+- Defect rate comparison  
+- Lead time evaluation  
+- Cost efficiency analysis  
+
+### 4. Logistics Analysis
+- Shipping carrier performance  
+- Transport mode comparison  
+
+### 5. Quality Analysis
+- Inspection result distribution  
+- Supplier-wise quality performance  
+
+### 6. Correlation Analysis
+- Relationship between cost, price, and revenue  
+
+---
+
+## 📈 Key Insights
+- Some suppliers have significantly higher defect rates  
+- Transportation mode impacts shipping cost efficiency  
+- Product type strongly influences revenue generation  
+
+---
+
+## 🚀 Conclusion
+This project demonstrates how data analytics can improve decision-making in supply chain operations by identifying inefficiencies and optimizing performance.
+
+---
+
+## 👩‍💻 Author
+Mansi Gautam
