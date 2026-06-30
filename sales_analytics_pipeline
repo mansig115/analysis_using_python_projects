@@ -1,0 +1,51 @@
+# Sales Analytics Pipeline — Excel + Python + MySQL + Power BI
+
+## Project Overview
+An end-to-end data pipeline project built to demonstrate real-world data workflow:
+raw Excel data → Python cleaning → MySQL storage → Power BI dashboard.
+
+## Business Problem
+A sales team tracking orders across 4 regions and 5 product categories needed
+a reliable, refreshable dashboard — not a static spreadsheet updated manually each month.
+
+## Tools & Technologies
+| Tool | Purpose |
+|------|---------|
+| Python (pandas) | Data loading, cleaning, transformation |
+| SQLAlchemy + PyMySQL | Python-to-MySQL database connection |
+| MySQL | Cleaned data storage (single source of truth) |
+| Power BI | Interactive dashboard and visualisation |
+| Excel | Raw data source |
+
+## What I Did
+1. Loaded raw sales data (520 rows, 7 columns) from Excel into Python
+2. Cleaned data: removed 38 duplicate rows, validated datatypes
+3. Engineered 3 new columns: Profit, Year, Month
+4. Pushed 482 clean rows into MySQL database (salesdb → sales_data table)
+5. Connected Power BI to MySQL and built interactive dashboard
+
+## Dashboard KPIs
+- Total Sales: ₹20M
+- Total Profit: ₹5M
+- Average Profit Margin: 25.09%
+- Sales trend by Month (2023–2024)
+- Profit breakdown by Region (North, South, East, West)
+- Sales by Product (Printer, Tablet, Laptop, Monitor, Mobile)
+
+## Key Learning
+Storing cleaned data in MySQL instead of a flat CSV means the Power BI dashboard
+refreshes automatically when the Python pipeline reruns — no manual file management.
+
+## Files in this Repo
+| File | Description |
+|------|-------------|
+| Cleaning_data_using_python.ipynb | Full Python notebook (load → clean → push to MySQL) |
+| sales_raw_500.xlsx | Raw input data |
+| dashboard_screenshot.png | Power BI dashboard preview |
+
+## How to Run
+1. Install dependencies: pip install pandas sqlalchemy pymysql openpyxl
+2. Set up MySQL locally, create database: CREATE DATABASE salesdb;
+3. Update the connection string in the notebook with your password
+4. Run all cells in the notebook
+5. Open Power BI and connect to MySQL localhost → salesdb → sales_data
